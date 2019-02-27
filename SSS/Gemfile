@@ -64,4 +64,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'dotenv-rails'
 
+# Additional gems
 gem 'devise'
+
+# Design
+gem 'bootstrap-sass'
+gem 'bootstrap'
+gem 'jquery-rails'
+gem 'font-awesome-sass'
+gem 'ajax-datatables-rails'
+gem 'jquery-datatables'
