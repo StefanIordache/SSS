@@ -66,6 +66,8 @@ gem 'dotenv-rails'
 
 # Additional gems
 gem 'devise'
+gem 'devise-i18n'
+gem 'simple_form'
 
 # Design
 gem 'bootstrap-sass'

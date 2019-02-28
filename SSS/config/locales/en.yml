@@ -30,4 +30,32 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  home:
+    join: "Join us"
+    email_address: "Email Address"
+    register: "Register"
+    password: "Password"
+    password_confirmation: "Password Confirmation"
+    sign_up: "Sign up"
+    already_have_an_account: "Already have an account?"
+    create_your_profile: "Create your profile"
+    upload_expenses: "Upload Expenses"
+    manage_your_money: "Manage Your Money"
+    features: "Features"
+    works_on_everything: "Works on everything"
+    works_on_everything_text: "Do you own a table, a smartphone or a desktop? Don't worry about that. Our app is available for every type of device."
+    always_available: "Always available"
+    always_available_text: "Our services are always available so you can place all your expenses at any time, even on busy nights out."
+    international: "International"
+    international_text: "Even if you are from Europe, Asia or Antarctica you are able to use PutTheMoneyToTheSock on your language."
+    customizable: "Customizable"
+    customizable_text: "Customize your profile with different currencies and manage your money flow in a friendly way. We even give you charts."
+    subscribe_to_newsletter: "Subscribe to Newsletter"
+    subscribe: "Subscribe"
+    remember_me: "Remember me"
+    go_to_home_page: "Go to Home Page"
+    sign_in_with: "Sign in with "
+    log_in: "Log In"
+    new_here: "New here?"
+  general:
+    or: "or"

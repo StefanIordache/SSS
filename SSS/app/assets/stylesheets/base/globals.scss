@@ -1,0 +1,42 @@
+html, body, #fullheight {
+    min-height: 100vh !important;
+    height: 100vh !important;
+  }
+ 
+ .field_with_errors { display: inline }
+ 
+ .jumbotron-title {
+   padding-top: 10px !important;
+   padding-bottom: 15px !important;
+   text-align: center;
+ }
+ 
+ a, u {
+   text-decoration: none !important;
+ }
+ 
+ html,
+ body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+ }
+
+ #wrapper {
+   min-height: 100%;
+   position: relative;
+ }
+
+ #header {
+   background: #ededed;
+   padding: 10px;
+ }
+
+ #content {
+   padding-bottom: 100px;
+ }
+
+ #footer {
+   bottom: 0;
+   left: 0;
+ }
