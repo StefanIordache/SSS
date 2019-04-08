@@ -1,4 +1,4 @@
-class OmniauthController < ApplicationController
+class OmniauthController < Devise::OmniauthCallbacksController
     
     # Facebook callback
     def facebook

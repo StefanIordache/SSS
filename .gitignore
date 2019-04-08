@@ -47,5 +47,7 @@ bower.json
 # Ignore node_modules
 node_modules/
 
-
 .vscode
+.idea
+.rakeTasks
+.generators
