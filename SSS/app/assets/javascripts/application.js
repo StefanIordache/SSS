@@ -18,3 +18,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require chartkick
+//= requires dashboard
+//= requires cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js

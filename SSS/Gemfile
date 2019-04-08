@@ -82,3 +82,7 @@ gem 'jquery-rails'
 gem 'font-awesome-sass'
 gem 'ajax-datatables-rails'
 gem 'jquery-datatables'
+
+# charts
+gem "chartkick"
+gem 'groupdate'
