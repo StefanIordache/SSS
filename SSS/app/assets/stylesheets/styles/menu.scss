@@ -1,0 +1,36 @@
+#page-template {
+  display: flex;
+  justify-content: center;
+}
+
+#content-template {
+  width: 82%;
+  display: flex;
+  justify-content: center;
+}
+
+#menu-template {
+  border-top: 1px solid #cc6600;
+  width: 18%;
+  position: sticky;
+  display: none;
+  background-color: #2f4050;
+}
+
+#menu-template .menu-item {
+  padding: 10px 20px;
+  border-bottom: 2px solid #cc6600;
+  border-top: 2px solid #cc6600;
+  color: #9d9d9d;
+  width: 100%;
+  font-weight: 700;
+  display: block;
+  font-size: 2.5vh;
+  margin-bottom: 2px;
+}
+#menu-template .menu-item:hover {
+  background-color: #475e73;
+}
+#menu-template .menu-logo {
+  font-size: 5vh;
+}

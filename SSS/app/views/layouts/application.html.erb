@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>SSS</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>SSS</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= yield :stylesheets %>
 
-  <body>
-    <div class="body" id="wrapper">
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= yield :scipts %>
+</head>
 
-      <div id="header">
-      <%= render 'layouts/header' %>
-      </div>
 
+<body>
+<div class="body" id="wrapper">
+
+  <div id="header">
+    <%= render 'layouts/header' %>
+  </div>
+
+  <div id="page-template">
+
+    <%= render 'layouts/menu' %>
+
+    <div id="content-template">
 
       <div id="content">
         <% flash.each do |name, msg| -%>
-          <%= content_tag(:div,  class: "alert fade in alert-#{name}") do %>
+          <%= content_tag(:div, class: "alert fade in alert-#{name}") do %>
             <%= msg %>
             <button class="close" data-dismiss="alert">×</button>
           <% end %>
         <% end -%>
         <%= yield %>
       </div>
-      
+
       <%= render 'layouts/footer' %>
 
     </div>
-  </body>
+
+  </div>
+</div>
+</body>
 </html>
