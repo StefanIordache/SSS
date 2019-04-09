@@ -77,7 +77,8 @@ gem 'activerecord-session_store'
 
 # Design
 gem 'bootstrap-sass'
-gem 'bootstrap'
+gem 'popper_js', '~> 1.14.5'
+# gem 'bootstrap'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
 gem 'ajax-datatables-rails'

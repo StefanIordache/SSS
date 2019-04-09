@@ -15,7 +15,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( styles/devise.scss )
 Rails.application.config.assets.precompile += %w( styles/dashboard.scss )
-Rails.application.config.assets.precompile += %w( dashboard/da.js )
+Rails.application.config.assets.precompile += %w( dashboard/dashboard.js )
 Rails.application.config.assets.precompile += %w( reports.css )
 Rails.application.config.assets.precompile += %w( styles/features_boxed.scss )
 Rails.application.config.assets.precompile += %w( styles/welcome.scss )
