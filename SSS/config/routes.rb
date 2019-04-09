@@ -7,8 +7,8 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
 
-  root to: 'users#index'
+  # root to: 'users#index'
 
-  root to: 'dashboard#index'
+  # root to: 'dashboard#index'
 
 end
