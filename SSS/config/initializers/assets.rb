@@ -14,5 +14,5 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
 Rails.application.config.assets.precompile += %w( styles/devise.scss )
-Rails.application.config.assets.precompile += %w( payments.css )
-Rails.application.config.assets.precompile += %w( payments/index.js )
+Rails.application.config.assets.precompile += %w( expenses.css )
+Rails.application.config.assets.precompile += %w( expenses/index.js )

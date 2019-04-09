@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   get 'users/index', to: 'users#index', as: 'users'
 
-  get 'payments/index', to: 'payments#index', as: 'payments'
+  get 'expenses/index', to: 'expenses#index', as: 'expenses'
 
 end
