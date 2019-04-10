@@ -11,6 +11,7 @@
   background: white;
   z-index: 10000;
 }
+
 .rad-logo-container {
   width: 400px;
   text-align: left;
@@ -19,6 +20,7 @@
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
+
 .rad-logo {
   text-decoration: none;
   position: relative;
@@ -32,10 +34,11 @@
   color: #222533;
   display: inline-block;
 }
+
 .rad-body-wrapper {
   position: absolute;
   left: 200px;
-  right:200px;
+  right: 200px;
   top: 150px;
   width: auto;
   height: 100vh;

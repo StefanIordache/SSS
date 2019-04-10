@@ -57,5 +57,38 @@ en:
     sign_in_with: "Sign in with "
     log_in: "Log In"
     new_here: "New here?"
+
+  menu:
+    home: "Home"
+    about: "About"
+    profile: "Profile"
+    dashboard: "Dashboard"
+    expenses: "Expenses"
+    raports: "Raports"
+    other1: "Other1"
+    other2: "Other2"
+
+  expenses:
+    this: "Expense"
+    add: "Add new expense"
+    confirm_delete_question: "Are you sure you want to delete this expense?"
+    no_records: "You have no expenses registered"
+    modal:
+      info1: "Informatia1"
+      info2: "Informatia2"
+      info3: "Informatia3"
+      info4: "Informatia4"
+      info5: "Informatia5"
+      info6: "Informatia6"
+      info7: "Informatia7"
+      info8: "Informatia8"
+      info9: "Informatia9"
+
   general:
     or: "or"
+    description: "Description"
+    save: "Save"
+    cancel: "Cancel"
+    edit: "Edit"
+    delete: "Delete"
+    upload: "Upload"

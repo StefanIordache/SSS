@@ -1,0 +1,36 @@
+<div id="menu-template">
+  <div class="menu-item menu-logo">
+    Smart<br>Spending<br>Saving
+  </div>
+  <%= link_to root_path, :class => "menu-item" do %>
+    <%= t :'menu.home' %> <i class="fas fa-home"></i>
+  <% end %>
+
+  <%= link_to root_path, :class => "menu-item" do %>
+    <%= t :'menu.about' %> <i class="fas fa-info"></i>
+  <% end %>
+
+  <%= link_to root_path, :class => "menu-item" do %>
+    <%= t :'menu.profile' %> <i class="fas fa-user-circle"></i>
+  <% end %>
+
+  <%= link_to dashboard_index_path, :class => "menu-item" do %>
+    <%= t :'menu.dashboard' %> <i class="fas fa-clipboard-list"></i>
+  <% end %>
+
+  <%= link_to expenses_path, :class => "menu-item" do %>
+    <%= t :'menu.expenses' %> <i class="fas fa-money-bill-wave"></i>
+  <% end %>
+
+  <%= link_to reports_index_path, :class => "menu-item" do %>
+    <%= t :'menu.raports' %> <i class="fas fa-chart-pie"></i>
+  <% end %>
+
+  <%= link_to root_path, :class => "menu-item" do %>
+    <%= t :'menu.other1' %> <i class="fas fa-rocket"></i>
+  <% end %>
+
+  <%= link_to root_path, :class => "menu-item" do %>
+    <%= t :'menu.other2' %> <i class="fas fa-rocket"></i>
+  <% end %>
+</div>
