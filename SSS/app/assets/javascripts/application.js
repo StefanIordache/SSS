@@ -20,3 +20,4 @@
 //= require bootstrap
 //= require datatables
 //= require menu
+//= require toastr

@@ -26,7 +26,8 @@ $(function () {
     });
 
     $('#infoExpenseModal .modal-footer button.btn-success').on('click', function () {
-        $('#infoExpenseModal form').submit();
+        //$('#infoExpenseModal form').submit();
+        toastr.success("Formularul a fost trimis cu succes");
     });
 
     $('#confirmDeleteExpense').on('click', function () {
@@ -37,11 +38,11 @@ $(function () {
             type: "GET",//"DELETE",
             url: "/expenses/index",
             success: function ($response) {
-                console.log('Succes');
+                toastr.success("S-a sters!");
                 //window.location.replace("/expenses/index");
             },
             error: function () {
-                console.log('Eroare la stergere!');
+                toastr.error("A aparut o eroare!");
             }
         });
     });
