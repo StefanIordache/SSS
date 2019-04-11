@@ -1,0 +1,200 @@
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag 'expenses', media: 'all', 'data-turbolinks-track': 'reload' %>
+<% end %>
+
+<% content_for :scripts do %>
+  <%= javascript_include_tag 'expenses/index', 'data-turbolinks-track': 'reload' %>
+<% end %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <div class="card">
+
+        <div class="card-header">
+          <b>Expenses</b>
+        </div>
+
+        <div class="card-body">
+
+          <div class="expenses-control-panel">
+            <button class="btn btn-outline-primary add-expenses-btn" data-toggle="modal" data-target="#infoExpenseModal">
+              <i class="fas fa-plus"></i> <%= t :'expenses.add' %>
+            </button>
+          </div>
+
+          <% if @expenses.blank? %>
+
+            <table id="expenses-datatable" class="table table-hover">
+              <thead>
+              <tr>
+                <th>Go to</th>
+                <th>Title</th>
+                <th>Date</th>
+                <th>
+                  <%= t :'general.description' %>
+                  <!--                  <i class="far fa-question-circle modal-opener" data-toggle="modal" data-target="#infoExpenseModal" expense-id=""></i>-->
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              <% for i in 1..500 do %>
+                <tr>
+                  <td><%= i %></td>
+                  <td></td>
+                  <td></td>
+                  <td>Cam asta ar fi lungimea potrivita pt descrierea platii <%= i %>
+                    <i class="far fa-question-circle modal-opener" data-toggle="modal" data-target="#infoExpenseModal" expense-id="<%= i %>"></i>
+                  </td>
+                </tr>
+              <% end %>
+              <%# @expenses.each do |expense| %>
+<!--                <tr>-->
+<!--                  <td><%#= link_to expense.title, expense_path(expense) %></td>-->
+<!--                  <td><%#= expense.amount.to_s + ' ' + expense.currency.to_s.humanize.upcase %></td>-->
+<!--                  <td><%#= expense.expense_date %></td>-->
+<!--                  <td><%#= expense.description %></td>-->
+<!--                  <td>-->
+
+                    <%#= link_to edit_expense_path(expense), class: "btn btn-sm btn-info" do %>
+<!--                      <i class="fas fa-edit"></i>-->
+                    <%# end %>
+
+                    <%#= link_to expense_path(expense), method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-sm btn-danger" do %>
+<!--                      <i class="fas fa-trash-alt"></i>-->
+                    <%# end %>
+
+<!--                  </td>-->
+<!--                </tr>-->
+              <%# end %>
+              </tbody>
+            </table>
+          <% else %>
+
+            <div class="container"><%= t :'expenses.no_records' %></div>
+
+          <% end %>
+        </div>
+
+        <div class="modal fade" id="infoExpenseModal" tabindex="-1" role="dialog" aria-labelledby="infoExpenseModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title" id="infoExpenseModalLabel"><b><%= t :'expenses.this' %></b></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <%# if not @expenses.blank? %>
+                <%#= render 'form' %>
+                <%# end %>
+                <form class="form">
+                  <div class="modal-body-half">
+
+                    <div class="col-md-12 form-input">
+                      <label for="info1" class=""><b><%= t :'expenses.modal.info1' %></b></label>
+                      <input type="text" name="info1" class="form-input-info" placeholder="" value="info1" required>
+                    </div>
+
+                    <div class="col-md-12 form-input">
+                      <label for="info2" class=""><b><%= t :'expenses.modal.info2' %></b></label>
+                      <input type="text" name="info2" class="form-input-info" placeholder="" value="info2" required>
+                    </div>
+
+                    <div class="col-md-12 form-input">
+                      <label for="info3" class=""><b><%= t :'expenses.modal.info3' %></b></label>
+                      <input type="text" name="info3" class="form-input-info" placeholder="" value="info3" required>
+                    </div>
+
+                    <div class="col-md-12 form-input">
+                      <label for="info4" class=""><b><%= t :'expenses.modal.info4' %></b></label>
+                      <input type="text" name="info4" class="form-input-info" placeholder="" value="info4" required>
+                    </div>
+
+                  </div>
+                  <div class="modal-body-half">
+
+                    <div class="col-md-12 form-input">
+                      <label for="info5" class=""><b><%= t :'expenses.modal.info5' %></b></label>
+                      <input type="text" name="info5" class="form-input-info" placeholder="" value="info5" required>
+                    </div>
+
+                    <div class="col-md-12 form-input">
+                      <label for="info6" class=""><b><%= t :'expenses.modal.info6' %></b></label>
+                      <input type="text" name="info6" class="form-input-info" placeholder="" value="info6" required>
+                    </div>
+
+                    <div class="col-md-12 form-input">
+                      <label for="info7" class=""><b><%= t :'expenses.modal.info7' %></b></label>
+                      <input type="text" name="info7" class="form-input-info" placeholder="" value="info7" required>
+                    </div>
+
+                    <div class="col-md-12 form-input">
+                      <label for="info8" class=""><b><%= t :'expenses.modal.info8' %></b></label>
+                      <input type="text" name="info8" class="form-input-info" placeholder="" value="info8" required>
+                    </div>
+
+                  </div>
+
+                  <div class="modal-body-full">
+                    <div class="col-md-12 form-input">
+                      <label for="info9" class=""><b><%= t :'expenses.modal.info9' %></b></label>
+                      <input type="file" name="info9" class="form-input-info" required>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger w-50" data-dismiss="modal">
+                  <%= t :'general.cancel' %> <i class="far fa-window-close"></i>
+                </button>
+                <button type="button" class="btn btn-danger w-50" data-toggle="modal" data-target="#deleteExpenseModal">
+                  <%= t :'general.delete' %> <i class="far fa-trash-alt"></i>
+                </button>
+                <button type="button" class="btn btn-info w-50">
+                  <%= t :'general.edit' %> <i class="far fa-edit"></i>
+                </button>
+                <button type="button" class="btn btn-success w-50" expense-id="" id="confirmExpense">
+                  <%= t :'general.save' %> <i class="far fa-save"></i>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="deleteExpenseModal" tabindex="-1" role="dialog" aria-labelledby="deleteExpenseModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title" id="deleteExpenseModalLabel"><%= t :'general.delete' %> <%= t :'expenses.this' %></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <%= t :'expenses.confirm_delete_question' %>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><%= t :'general.cancel' %></button>
+                <button type="button" class="btn btn-success" expense-id="" id="confirmDeleteExpense">
+                  <%= t :'general.delete' %>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
