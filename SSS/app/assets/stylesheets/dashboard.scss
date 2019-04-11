@@ -19,8 +19,8 @@ a:hover {
 
 .rad-navigation {
   position: absolute;
-  left: 200px;
-  right: 200px;
+  left: 10%;
+  right: 10%;
   top: 100px;
   height: 50px;
   box-shadow: 0 0px 9px 4px rgba(0, 0, 0, 0.1), 0 -5px 2px 2px rgba(0, 0, 0, 0.1);
@@ -154,7 +154,7 @@ a:hover {
   border-top: 1px solid #F2F2F2;
 }
 .title-white{
-  color:white;
+  color:#ccccff;
   text-align: center;
   //margin-bottom:20px;
 }
@@ -162,10 +162,10 @@ a:hover {
   z-index: 9999;
   position: absolute;
   background: #2f4050;
-  width: 400px;
-  height: 100vh;
+  width: 20%;
+  height: 100%;
   top: 150px;
-  left: 200px;
+  left: 10%;
   border-bottom: 1px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 2px 4px 8px rgba(0, 0, 0, 0.28);
   -webkit-transition: all .2s ease-in-out;
@@ -267,11 +267,12 @@ a:hover {
 
 .rad-body-wrapper {
   position: absolute;
-  left: 600px;
-  right:200px;
+  left:30%;
+  right:10%;
   top: 150px;
   width: auto;
-  height: 100vh;
+  height: 100%;
+  background-color: #ccccff;
   // -webkit-transition: all .2s ease-in-out;
   // transition: all .2s ease-in-out;
 }
@@ -313,47 +314,47 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 850px) {
-  .rad-navigation {
-    height: 100px;
-  }
-  .rad-logo-container {
-    display: block;
-    float: none;
-    width: 100%;
-    border-bottom: 1px solid #F2F2F2;
-  }
-  .rad-top-nav-container {
-    display: block;
-    float: none;
-    height: 50px;
-    font-size: 12px;
-    background: white;
-  }
-  .rad-menu-badge {
-    font-size: 10px;
-    min-width: 15px;
-    min-height: 15px;
-    line-height: 15px;
-  }
-  .links {
-    float: right;
-  }
-  .rad-sidebar {
-    top: 100px;
-  }
-  .rad-sidebar.rad-nav-min {
-    -webkit-transform: translate3d(-200px, 0, 0);
-    transform: translate3d(-200px, 0, 0);
-  }
-  .rad-body-wrapper {
-    top: 125px;
-    position: relative;
-  }
-  .rad-body-wrapper.rad-nav-min {
-    left: 0px;
-  }
-}
+// @media screen and (max-width: 850px) {
+//   .rad-navigation {
+//     height: 100px;
+//   }
+//   .rad-logo-container {
+//     display: block;
+//     float: none;
+//     width: 100%;
+//     border-bottom: 1px solid #F2F2F2;
+//   }
+//   .rad-top-nav-container {
+//     display: block;
+//     float: none;
+//     height: 50px;
+//     font-size: 12px;
+//     background: white;
+//   }
+//   .rad-menu-badge {
+//     font-size: 10px;
+//     min-width: 15px;
+//     min-height: 15px;
+//     line-height: 15px;
+//   }
+//   .links {
+//     float: right;
+//   }
+//   .rad-sidebar {
+//     top: 100px;
+//   }
+//   .rad-sidebar.rad-nav-min {
+//     -webkit-transform: translate3d(-200px, 0, 0);
+//     transform: translate3d(-200px, 0, 0);
+//   }
+//   .rad-body-wrapper {
+//     top: 125px;
+//     position: relative;
+//   }
+//   .rad-body-wrapper.rad-nav-min {
+//     left: 0px;
+//   }
+// }
 
 .panel {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -389,11 +390,10 @@ a:hover {
   border-collapse: collapse;
   height: 320px;
   margin: auto;
-  max-width: 400px;
-  padding:5px;
-  width: 80%;
+  // padding:5px;
+  width: 85%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  animation: float 5s infinite;
+  //animation: float 5s infinite;
 }
 
 th {
@@ -422,9 +422,9 @@ th:last-child {
 tr {
   border-top: 1px solid #C1C3D1;
   border-bottom-: 1px solid #C1C3D1;
-  color:#666B85;
-  font-size:16px;
-  font-weight:normal;
+  color:#2f4050;
+  font-size:20px;
+  font-weight:bold;
   text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
 }
 
@@ -442,13 +442,13 @@ tr:last-child {
   border-bottom:none;
 }
 
-tr:nth-child(odd) td {
-  background:#ffd480;
-}
-
-tr:nth-child(odd):hover td {
-  background:#4E5066;
-}
+// tr:nth-child(odd) td {
+//   background:#ffd480;
+// }
+//
+// tr:nth-child(odd):hover td {
+//   background:#4E5066;
+// }
 
 tr:last-child td:first-child {
   border-bottom-left-radius:3px;
@@ -459,12 +459,12 @@ tr:last-child td:last-child {
 }
 
 td {
-  background:#FFFFFF;
+  background:#ccccff;
   padding:20px;
   text-align:left;
   vertical-align:middle;
-  font-weight:300;
-  font-size:18px;
+  font-weight:normal;
+  font-size:20px;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
   border-right: 1px solid #C1C3D1;
 }
